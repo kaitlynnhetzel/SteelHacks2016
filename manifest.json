@@ -1,16 +1,18 @@
 {
-  "manifest_version": 2,
-
-  "name": "Clickbait Blocker",
-  "description": "This extension blovks stupid-ass clickbait. NO MORE CLICKBAIT YAYYYYYYY :D",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+   "content_scripts": [ {
+      "js": [ "myscript.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "You'll never believe what this extension will do to YOUR browser. OMG!",
+   "icons": {
+      "128": "images/icon.png",
+      "16": "images/icon.png",
+      "48": "images/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA053ygkstYEoqDwPBXfjayBd/UHxLXD1NlVzWM4ve8PvtnPJOC7ffbDVqaG0YSlWabm9WRJVBOVRH43Vvtvy+FOEv7fjAEVdxXWY0Vv42cqzqmErUIObbZU6icdicJzo6To7Ybe+XtFFmTLd34pm1iETHUlc7MVNc7zZUikQE9gzV06uttw58cRxOIwFZoDHb6HJyhr6uOs/R90cAp1/91HwG6bnwaQH/ORLaD7e0z5T9+2Gq6fKOnzCoH+qiKiusTGGB1cN32AWyWnUEgVlN0biwEzOk51jKmwNbyfou7A+dpSIpM1QdyRL+6/kiiXZbJKFwz6roQl9OmFz/NT8s9QIDAQAB",
+   "manifest_version": 2,
+   "name": "ClickBaitBlocker",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1"
 }
