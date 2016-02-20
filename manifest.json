@@ -1,4 +1,8 @@
 {
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "What happens when you press this button will blow your EFFING mind!"
+  },
    "content_scripts": [ {
       "js": [ "myscript.js" ],
       "matches": [ "*://*/*" ],
